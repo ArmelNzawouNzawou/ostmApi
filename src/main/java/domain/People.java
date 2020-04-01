@@ -78,6 +78,7 @@ public class People {
                 '}';
     }
     public static class Builder{
+
         private String id;
         private String name;
         private String surname;

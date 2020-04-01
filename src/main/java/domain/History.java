@@ -9,4 +9,5 @@ public class History {
     private List<String> image_id;
     private String content;
     private Date date;
+
 }
