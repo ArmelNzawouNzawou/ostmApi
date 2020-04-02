@@ -6,7 +6,7 @@ public class Member {
     private String surname;
     private String birthday;
     private String image_code;
-
+private Member(){}
 
     public String getId() {
         return id;
@@ -69,9 +69,8 @@ public class Member {
        private String image_code;
 
 
-       public Builder setId(String id) {
+       public Builder(String id) {
            this.id = id;
-           return this;
        }
 
        public Builder setName(String name) {

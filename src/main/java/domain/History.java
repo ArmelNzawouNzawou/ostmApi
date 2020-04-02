@@ -9,7 +9,7 @@ public class History {
     private List<String> image_id;
     private String content;
     private Date date;
-
+private History(){}
     public String getId() {
         return id;
     }
@@ -69,9 +69,8 @@ public class History {
         private String content;
         private Date date;
 
-        public Builder setId(String id) {
+        public Builder(String id) {
             this.id = id;
-            return this;
         }
 
         public Builder setDescription(String description) {
@@ -103,7 +102,6 @@ public class History {
             hist.image_id = this.image_id;
             hist.content = this.content;
             hist.date = this.date;
-
             return hist;
 
         }

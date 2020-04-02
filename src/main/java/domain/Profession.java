@@ -5,6 +5,8 @@ public class Profession {
     private String profession;
     private String description;
 
+    private Profession(){}
+
     public String getId() {
         return id;
     }
@@ -44,9 +46,8 @@ public class Profession {
         private String profession;
         private String description;
 
-        public Builder setId(String id) {
+        public Builder (String id) {
             this.id = id;
-            return this;
         }
 
         public Builder setProfession(String profession) {

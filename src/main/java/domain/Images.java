@@ -6,7 +6,7 @@ public class Images {
     private String id;
     private byte[] image;
     private String description;
-
+private Images(){}
     public String getId() {
         return id;
     }
@@ -47,9 +47,8 @@ public class Images {
         private byte[] image;
         private String description;
 
-        public Builder setId(String id) {
+        public Builder(String id) {
             this.id = id;
-            return this;
         }
 
         public Builder setImage(byte[] image) {

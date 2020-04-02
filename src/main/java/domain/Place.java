@@ -6,7 +6,7 @@ public class Place {
     private String latitude;
     private String longititude;
 
-
+private Place(){}
     public String getId() {
         return id;
     }
@@ -57,36 +57,23 @@ public class Place {
         private String longititude;
 
 
-        public String getId() {
-            return id;
+        public Builder(String id) {
+           this.id=id;
         }
 
-        public void setId(String id) {
-            this.id = id;
-        }
-
-        public String getTitle() {
-            return title;
-        }
-
-        public void setTitle(String title) {
+        public Builder setTitle(String title) {
             this.title = title;
+            return this;
         }
 
-        public String getLatitude() {
-            return latitude;
-        }
-
-        public void setLatitude(String latitude) {
+        public Builder setLatitude(String latitude) {
             this.latitude = latitude;
+            return this;
         }
 
-        public String getLongititude() {
-            return longititude;
-        }
-
-        public void setLongititude(String longititude) {
+        public Builder setLongititude(String longititude) {
             this.longititude = longititude;
+            return this;
         }
 
         public Place build(){

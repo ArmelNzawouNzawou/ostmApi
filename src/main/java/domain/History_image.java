@@ -5,6 +5,7 @@ public class History_image {
     private String history_image_id;
     private String description;
 
+    private History_image(){}
     public String getImage_id() {
         return image_id;
     }
@@ -44,9 +45,8 @@ public class History_image {
         private String history_image_id;
         private String description;
 
-        public Builder setImage_id(String image_id) {
+        public Builder(String image_id) {
             this.image_id = image_id;
-            return this;
         }
 
         public Builder setHistory_image_id(String history_image_id) {

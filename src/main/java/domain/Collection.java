@@ -9,7 +9,7 @@ public class Collection {
     private String profile_description;
     private String history;
 
-
+private Collection(){}
 
     public String getId() {
         return id;
@@ -70,12 +70,9 @@ public class Collection {
         private String profile_description;
         private String history;
 
-        public Builder(){}
 
-
-        public Builder setId(String id) {
+        public Builder (String id) {
             this.id = id;
-            return this;
         }
 
         public Builder setName(String name) {
@@ -99,16 +96,13 @@ public class Collection {
         }
 
         public Collection build(){
-
           Collection collect = new Collection();
-
           collect.id=this.id;
           collect.name=this.name;
           collect.image_code = this.image_code;
           collect.profile_description =this.profile_description;
           collect.history = this.history;
           return collect;
-
         }
 
     }

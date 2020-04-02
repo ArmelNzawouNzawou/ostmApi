@@ -4,7 +4,7 @@ public class People_image {
     private String people_id;
     private String image_id;
     private String image_type;
-
+private People_image(){}
     public String getPeople_id() {
         return people_id;
     }
@@ -45,9 +45,8 @@ public class People_image {
         private String image_id;
         private String image_type;
 
-        public Builder setPeople_id(String people_id) {
+        public Builder(String people_id) {
             this.people_id = people_id;
-            return this;
         }
 
         public Builder setImage_id(String image_id) {

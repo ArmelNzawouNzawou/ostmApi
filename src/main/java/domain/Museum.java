@@ -7,6 +7,7 @@ public class Museum {
     private String image_id;
     private String place_id;
 
+    private Museum(){}
 
     public String getProfile() {
         return profile;

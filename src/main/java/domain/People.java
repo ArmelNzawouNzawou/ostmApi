@@ -9,6 +9,7 @@ public class People {
     private String history;
     private String profession;
 
+    private People(){}
     public String getId() {
         return id;
     }

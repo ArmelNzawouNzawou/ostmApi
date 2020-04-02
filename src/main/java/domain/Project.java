@@ -7,7 +7,7 @@ public class Project {
     private String image_code;
     private String profile_desc;
 
-
+private Project(){}
     public String getId() {
         return id;
     }
@@ -68,9 +68,8 @@ public class Project {
         private String profile_desc;
 
 
-        public Builder setId(String id) {
+        public Builder(String id) {
             this.id = id;
-            return this;
         }
 
         public Builder setTitle(String title) {

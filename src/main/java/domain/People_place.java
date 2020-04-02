@@ -4,6 +4,7 @@ public class People_place {
     private String place_id;
     private String people_id;
 
+    private People_place(){}
     public String getPlace_id() {
         return place_id;
     }
@@ -33,9 +34,8 @@ public class People_place {
         private String place_id;
         private String people_id;
 
-        public Builder setPlace_id(String place_id) {
+        public Builder(String place_id) {
             this.place_id = place_id;
-            return this;
         }
 
         public Builder setPeople_id(String people_id) {

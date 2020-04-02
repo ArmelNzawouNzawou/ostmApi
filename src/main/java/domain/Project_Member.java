@@ -5,7 +5,7 @@ public class Project_Member {
     private String member_id;
     private String description;
 
-
+private Project_Member(){}
     public String getProject_id() {
         return project_id;
     }
@@ -47,16 +47,19 @@ public class Project_Member {
         private String description;
 
 
-        public void setProject_id(String project_id) {
+        public Builder setProject_id(String project_id) {
             this.project_id = project_id;
+            return this;
         }
 
-        public void setMember_id(String member_id) {
+        public Builder setMember_id(String member_id) {
             this.member_id = member_id;
+            return this;
         }
 
-        public void setDescription(String description) {
+        public Builder setDescription(String description) {
             this.description = description;
+            return this;
         }
 
         public Project_Member build(){

@@ -4,7 +4,7 @@ public class people_profession {
     private String profession_id;
     private String people_id;
     private String description;
-
+private people_profession(){}
     public String getProfession_id() {
         return profession_id;
     }
@@ -44,9 +44,8 @@ public class people_profession {
         private String people_id;
         private String description;
 
-        public Builder setProfession_id(String profession_id) {
+        public Builder(String profession_id) {
             this.profession_id = profession_id;
-            return this;
         }
 
         public Builder setPeople_id(String people_id) {
