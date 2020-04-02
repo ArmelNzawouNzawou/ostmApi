@@ -27,6 +27,16 @@ public class People_image {
 
     public void setImage_type(String image_type) {
         this.image_type = image_type;
+
+    }
+
+    @Override
+    public String toString() {
+        return "People_image{" +
+                "people_id='" + people_id + '\'' +
+                ", image_id='" + image_id + '\'' +
+                ", image_type='" + image_type + '\'' +
+                '}';
     }
 
     public static class Builder {

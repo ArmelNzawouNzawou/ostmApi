@@ -50,6 +50,17 @@ public class History {
         this.date = date;
     }
 
+    @Override
+    public String toString() {
+        return "History{" +
+                "id='" + id + '\'' +
+                ", description='" + description + '\'' +
+                ", image_id=" + image_id +
+                ", content='" + content + '\'' +
+                ", date=" + date +
+                '}';
+    }
+
     public static class Builder{
 
         private String id;

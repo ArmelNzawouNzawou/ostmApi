@@ -29,6 +29,15 @@ public class People_profession_image {
         this.desc = desc;
     }
 
+    @Override
+    public String toString() {
+        return "People_profession_image{" +
+                "people_profession_image='" + people_profession_image + '\'' +
+                ", image_id='" + image_id + '\'' +
+                ", desc='" + desc + '\'' +
+                '}';
+    }
+
     public static class Builder {
 
         private String people_profession_image;

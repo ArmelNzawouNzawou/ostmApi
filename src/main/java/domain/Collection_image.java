@@ -30,6 +30,16 @@ public class Collection_image {
         this.description = description;
     }
 
+
+    @Override
+    public String toString() {
+        return "Collection_image{" +
+                "image_id='" + image_id + '\'' +
+                ", collection_image_id='" + collection_image_id + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     public static class Builder {
 
         private String image_id;

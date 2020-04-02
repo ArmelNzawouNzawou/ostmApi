@@ -20,6 +20,14 @@ public class People_place {
         this.people_id = people_id;
     }
 
+    @Override
+    public String toString() {
+        return "People_place{" +
+                "place_id='" + place_id + '\'' +
+                ", people_id='" + people_id + '\'' +
+                '}';
+    }
+
     public static class Builder{
 
         private String place_id;

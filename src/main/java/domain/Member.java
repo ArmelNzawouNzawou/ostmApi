@@ -48,7 +48,19 @@ public class Member {
         this.image_code = image_code;
     }
 
-   public static class Builder {
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", image_code='" + image_code + '\'' +
+                '}';
+    }
+
+    public static class Builder {
 
        private String id;
        private String name;

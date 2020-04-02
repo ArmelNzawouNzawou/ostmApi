@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.Arrays;
+
 public class Images {
     private String id;
     private byte[] image;
@@ -27,6 +29,16 @@ public class Images {
 
     public void setDescription(String description) {
         this.description = description;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Images{" +
+                "id='" + id + '\'' +
+                ", image=" + Arrays.toString(image) +
+                ", description='" + description + '\'' +
+                '}';
     }
 
     public  static class Builder{

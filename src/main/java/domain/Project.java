@@ -48,6 +48,17 @@ public class Project {
         this.profile_desc = profile_desc;
     }
 
+    @Override
+    public String toString() {
+        return "Project{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", image_code='" + image_code + '\'' +
+                ", profile_desc='" + profile_desc + '\'' +
+                '}';
+    }
+
     public static class Builder{
 
         private String id;
@@ -91,7 +102,7 @@ public class Project {
             proj.description = this.description;
             proj.image_code = this.image_code;
             proj.profile_desc = this.profile_desc;
-            
+
             return proj;
         }
     }

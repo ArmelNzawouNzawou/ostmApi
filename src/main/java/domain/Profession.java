@@ -29,6 +29,15 @@ public class Profession {
         this.description = description;
     }
 
+    @Override
+    public String toString() {
+        return "Profession{" +
+                "id='" + id + '\'' +
+                ", profession='" + profession + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     public static class Builder {
 
         private String id;

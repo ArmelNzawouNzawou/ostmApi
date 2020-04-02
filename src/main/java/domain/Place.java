@@ -39,6 +39,16 @@ public class Place {
         this.longititude = longititude;
     }
 
+    @Override
+    public String toString() {
+        return "Place{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", latitude='" + latitude + '\'' +
+                ", longititude='" + longititude + '\'' +
+                '}';
+    }
+
     public static class Builder{
 
         private String id;

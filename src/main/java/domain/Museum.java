@@ -48,6 +48,16 @@ public class Museum {
         this.place_id = place_id;
     }
 
+    @Override
+    public String toString() {
+        return "Museum{" +
+                "profile='" + profile + '\'' +
+                ", Address='" + Address + '\'' +
+                ", time='" + time + '\'' +
+                ", image_id='" + image_id + '\'' +
+                ", place_id='" + place_id + '\'' +
+                '}';
+    }
 
     public static class Builder {
 

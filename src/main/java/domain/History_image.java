@@ -29,6 +29,14 @@ public class History_image {
         this.description = description;
     }
 
+    @Override
+    public String toString() {
+        return "History_image{" +
+                "image_id='" + image_id + '\'' +
+                ", history_image_id='" + history_image_id + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 
     public static class Builder {
 

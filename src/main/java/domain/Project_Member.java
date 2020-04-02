@@ -30,6 +30,16 @@ public class Project_Member {
         this.description = description;
     }
 
+
+    @Override
+    public String toString() {
+        return "Project_Member{" +
+                "project_id='" + project_id + '\'' +
+                ", member_id='" + member_id + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     public  static class Builder {
 
         private String project_id;
