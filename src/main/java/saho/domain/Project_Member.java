@@ -1,4 +1,4 @@
-package domain;
+package saho.domain;
 
 public class Project_Member {
     private String project_id;

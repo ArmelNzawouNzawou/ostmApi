@@ -1,10 +1,8 @@
-package factory.domain;
+package saho.factory.domain;
 
-import domain.People;
+import saho.domain.People;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PeopleFactoryTest {
 People people=PeopleFactory.getPeople("Armel","Nzawu","1995/10/06","Gabon","None","developer");

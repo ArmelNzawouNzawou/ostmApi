@@ -1,4 +1,4 @@
-package domain;
+package saho.domain;
 
 import java.util.List;
 

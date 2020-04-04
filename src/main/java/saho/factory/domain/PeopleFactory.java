@@ -1,7 +1,7 @@
-package factory.domain;
+package saho.factory.domain;
 
-import domain.People;
-import util.GeneratId;
+import saho.domain.People;
+import saho.util.GeneratId;
 
 public class PeopleFactory {
     public static People getPeople( String name,String surname,String birth_date,String orgine,String history,String profession){

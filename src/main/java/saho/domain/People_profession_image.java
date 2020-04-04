@@ -1,4 +1,4 @@
-package domain;
+package saho.domain;
 
 public class People_profession_image {
     private String people_profession_image;

@@ -1,11 +1,11 @@
-package domain;
+package saho.domain;
 
-public class History_image {
+public class Collection_image {
     private String image_id;
-    private String history_image_id;
+    private String collection_image_id;
     private String description;
+private Collection_image(){}
 
-    private History_image(){}
     public String getImage_id() {
         return image_id;
     }
@@ -14,12 +14,12 @@ public class History_image {
         this.image_id = image_id;
     }
 
-    public String getHistory_image_id() {
-        return history_image_id;
+    public String getCollection_image_id() {
+        return collection_image_id;
     }
 
-    public void setHistory_image_id(String history_image_id) {
-        this.history_image_id = history_image_id;
+    public void setCollection_image_id(String collection_image_id) {
+        this.collection_image_id = collection_image_id;
     }
 
     public String getDescription() {
@@ -30,11 +30,12 @@ public class History_image {
         this.description = description;
     }
 
+
     @Override
     public String toString() {
-        return "History_image{" +
+        return "Collection_image{" +
                 "image_id='" + image_id + '\'' +
-                ", history_image_id='" + history_image_id + '\'' +
+                ", collection_image_id='" + collection_image_id + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
@@ -42,15 +43,16 @@ public class History_image {
     public static class Builder {
 
         private String image_id;
-        private String history_image_id;
+        private String collection_image_id;
         private String description;
+
 
         public Builder(String image_id) {
             this.image_id = image_id;
         }
 
-        public Builder setHistory_image_id(String history_image_id) {
-            this.history_image_id = history_image_id;
+        public Builder setCollection_image_id(String collection_image_id) {
+            this.collection_image_id = collection_image_id;
             return this;
         }
 
@@ -59,16 +61,14 @@ public class History_image {
             return this;
         }
 
-        public History_image build(){
-
-            History_image histIm  = new History_image();
-
-            histIm.image_id = this.image_id;
-            histIm.history_image_id = this.history_image_id;
-            histIm.description = this.description;
-
-            return histIm;
-
+        public Collection_image build() {
+            Collection_image collectIm = new Collection_image();
+            collectIm.image_id = this.image_id;
+            collectIm.collection_image_id = this.collection_image_id;
+            collectIm.description = this.description;
+            return collectIm;
         }
+
+
     }
 }

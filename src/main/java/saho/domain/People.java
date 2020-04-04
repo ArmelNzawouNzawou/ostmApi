@@ -1,6 +1,11 @@
-package domain;
+package saho.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class People {
+    @Id
     private String id;
     private String name;
     private String surname;

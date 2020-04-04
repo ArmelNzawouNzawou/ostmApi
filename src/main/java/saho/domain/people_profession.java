@@ -1,4 +1,4 @@
-package domain;
+package saho.domain;
 
 public class people_profession {
     private String profession_id;
