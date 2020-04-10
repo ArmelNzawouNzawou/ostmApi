@@ -1,8 +1,12 @@
 package saho.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Arrays;
 
+@Entity
 public class Images {
+    @Id
     private String id;
     private byte[] image;
     private String description;
@@ -41,7 +45,7 @@ private Images(){}
                 '}';
     }
 
-    public  static class Builder{
+    public static class Builder{
 
         private String id;
         private byte[] image;
@@ -61,7 +65,7 @@ private Images(){}
             return this;
         }
 
-        Images buid(){
+       public Images build(){
 
             Images img = new Images();
 

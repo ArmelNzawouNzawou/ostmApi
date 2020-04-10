@@ -1,9 +1,13 @@
 package saho.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 import java.util.List;
 
+@Entity
 public class History {
+    @Id
     private String id;
     private String description;
     private List<String> image_id;

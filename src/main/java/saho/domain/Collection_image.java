@@ -1,6 +1,11 @@
 package saho.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Collection_image {
+    @Id
     private String image_id;
     private String collection_image_id;
     private String description;

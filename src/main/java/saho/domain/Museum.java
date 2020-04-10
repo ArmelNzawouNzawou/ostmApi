@@ -1,6 +1,11 @@
 package saho.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Museum {
+    @Id
     private String profile;
     private String Address;
     private String time;
@@ -71,7 +76,7 @@ public class Museum {
         public Builder setProfile(String profile) {
             this.profile = profile;
             return this;
-        }
+    }
 
         public Builder setAddress(String address) {
             Address = address;

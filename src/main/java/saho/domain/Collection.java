@@ -1,8 +1,14 @@
 package saho.domain;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.List;
 
+@Entity
 public class Collection {
+
+    @Id
     private String id;
     private String name;
     private List<String> image_code;

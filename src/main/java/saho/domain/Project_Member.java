@@ -1,6 +1,10 @@
 package saho.domain;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class Project_Member {
+    @Id
     private String project_id;
     private String member_id;
     private String description;

@@ -1,6 +1,11 @@
 package saho.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Profession {
+    @Id
     private String id;
     private String profession;
     private String description;

@@ -1,10 +1,15 @@
 package saho.domain;
 
-public class people_profession {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class People_profession {
+    @Id
     private String profession_id;
     private String people_id;
     private String description;
-private people_profession(){}
+private People_profession(){}
     public String getProfession_id() {
         return profession_id;
     }
@@ -31,7 +36,7 @@ private people_profession(){}
 
     @Override
     public String toString() {
-        return "people_profession{" +
+        return "People_profession{" +
                 "profession_id='" + profession_id + '\'' +
                 ", people_id='" + people_id + '\'' +
                 ", description='" + description + '\'' +
@@ -58,9 +63,9 @@ private people_profession(){}
             return this;
         }
 
-        public people_profession build (){
+        public People_profession build (){
 
-            people_profession pplProf =new people_profession();
+            People_profession pplProf =new People_profession();
 
             pplProf.profession_id = this.profession_id;
             pplProf.people_id = this.people_id;
