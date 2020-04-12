@@ -1,10 +1,9 @@
-package saho.repository.people;
+package saho.repository.Member;
 
-import saho.domain.People;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import saho.domain.Member;
 
 @Repository
-public interface PeopleRepo extends JpaRepository<People,String> {
-
+public interface MemberRepo extends JpaRepository<Member, String> {
 }
